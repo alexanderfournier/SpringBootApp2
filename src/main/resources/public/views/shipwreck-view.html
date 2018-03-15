@@ -1,0 +1,35 @@
+<div class="container pad-top">
+  <table class="table workshoptable">
+      <tr>
+          <td><h3>Details for {{workshop.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{workshop.name}}</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{workshop.description}}</td>
+      </tr>
+      <tr>
+          <td>Workshop Day</td>
+          <td>{{workshop.day}}</td>
+      </tr>
+      <tr>
+          <td>Workshop Year</td>
+          <td>{{workshop.year}}</td>
+      </tr>
+      <tr>
+          <td>Workshop Month</td>
+          <td>{{workshop.month}}</td>
+      </tr>
+      <tr>
+          <td>Location</td>
+          <td>{{workshop.latitude}}, {{workshop.longitude}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editWorkshop({id:workshop.id})">Edit</a>
+  </div>
+</div>
